@@ -6,13 +6,18 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+    "aframe": "^1.1.0",
+    "aframe-react": "^4.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "twilio-video": "^2.9.0",
+    "web-vitals": "^0.2.4",
+    "serve": "^11.3.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
+  "scripts": { 
+    "start": "serve -s build",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

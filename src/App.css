@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-weight: 600;
+    color: #333e5a;
+    min-height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    background: #f0293e;
+    color: #fff;
+    text-align: center;
+    flex-grow: 0;
+    margin-bottom: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    font-weight: 300;
+    padding: 0.4em 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root {
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background: #ffffff;
+    flex-grow: 1;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+form > div {
+    width: 100%;
+    margin-bottom: 1em;
+}
+form > div > label {
+    display: block;
+    margin-bottom: 0.3em;
+}
+form > div > input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 0.4em;
+    border-radius: 6px;
+    border: 1px solid #333e5a;
+}
+
+button {
+    background: #333e5a;
+    color: #fff;
+    font-size: 16px;
+    padding: 0.4em;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+button:hover {
+    filter: brightness(150%);
+}
+
+/* .room {
+    position: relative;
+}
+.room button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+} */
+.room > h3 {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 1em;
 }
