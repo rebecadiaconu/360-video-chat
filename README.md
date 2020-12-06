@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# 360-video-chat
+
+WebVR app made using React, [A-Frame](https://aframe.io/) and Twilio. It offers immersive one-to-one videocalls, using Twilio's API for voice and video, all embedded in a 360° image rendered with A-Frame. Users can choose diffrent panoramic scenes and ambiental sounds, or upload custom equirectangular images from URL.
+
+### Known Issues
+
+`Due to iOS limitations, the video stream inside the 3D panorama won't work on Apple mobile devices`
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
